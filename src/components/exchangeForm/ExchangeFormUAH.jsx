@@ -210,7 +210,7 @@ function ExchangeFormUAH({ type }) {
   return (
     <div className={s.container}>
       <form className={s.form} onSubmit={handleSubmit}>
-        <p className={s.label}>UAH</p>
+        <p className={s.label}>UAH to </p>
         <select
           aria-label="select"
           className={s.select}

@@ -55,7 +55,6 @@ function App() {
     }
     return acc;
   }, {});
-  console.log(baseRates);
 
   return (
     <>
