@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Header from "./components/header/header";
+import Header from "./components/header/Header";
 import ExchangeForm from "./components/exchangeForm/ExchangeForm";
 import { exchangeCurrency, latestRates } from "./services/exchangeApi";
 import Loader from "./components/loader/Loader";
