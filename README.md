@@ -1,8 +1,13 @@
-# React + Vite
+# Currency Exchange App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![alt text](public/readme.jpg "jpg")
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Currency Conversion:** Convert amounts from one currency to another using the latest exchange rates.
+- **Current Exchange Rates:** View the current exchange rates of various currencies relative to the Ukrainian Hryvnia (UAH).
+- **Dynamic Exchange Rates:** Exchange rates are updated regularly to reflect the latest market conditions.
+
+## Technology stack
+
+React.js, JS, React Icons
