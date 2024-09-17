@@ -25,7 +25,7 @@ function App() {
         setIsLoading(false);
       }
     };
-    // rates();
+    rates();
   }, []);
 
   useEffect(() => {
@@ -41,7 +41,7 @@ function App() {
           setIsLoading(false);
         }
       };
-      // rates();
+      rates();
     }
   }, [exchangeData]);
 
