@@ -1,0 +1,72 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 60px;
+  width: 50vw;
+  transition: var(--animation-cubicBezier);
+}
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  margin: 0 auto;
+  /* margin-bottom: 40px; */
+  background-color: var(--color-white);
+  border-radius: 8px;
+}
+.button {
+  width: 50px;
+  height: 50px;
+  color: var(--color-white);
+  background: var(--color-accent);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: var(--animation-cubicBezier);
+}
+.button:hover,
+.button:focus {
+  background: var(--color-error);
+}
+.input {
+  width: 42%;
+  border-style: none;
+  background-color: transparent;
+  padding: 10px;
+  outline: none;
+  transition: var(--animation-cubicBezier);
+}
+
+.input::placeholder {
+  opacity: 0.3;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+}
+.select {
+  border-radius: 8px;
+  padding: 10px;
+  border-style: none;
+  outline: none;
+  transition: var(--animation-cubicBezier);
+  padding-right: 40px;
+  cursor: pointer;
+}
+.select option:first-of-type {
+  color: var(--color-white);
+}
+.label {
+  padding: 10px;
+  color: var(--color-dark);
+  font-weight: bold;
+}
+.text {
+  position: absolute;
+  bottom: -30px;
+}
