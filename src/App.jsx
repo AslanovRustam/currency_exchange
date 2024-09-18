@@ -4,6 +4,7 @@ import ExchangeForm from "./components/exchangeForm/ExchangeForm";
 import { exchangeCurrency, latestRates } from "./services/exchangeApi";
 import Loader from "./components/loader/Loader";
 import ExchangeFormUAH from "./components/exchangeForm/ExchangeFormUAH";
+import ErrorComponent from "./components/error/ErrorComponent";
 
 function App() {
   const [baseCurrency, setBaseCurrency] = useState("UAH");
@@ -60,6 +61,7 @@ function App() {
     <>
       {isLoading && <Loader />}
       <Header rates={headerRates} />
+      {error && <ErrorComponent error={error} />}
       <ExchangeForm
         baseRates={baseRates}
         onExchangeSubmit={onExchangeSubmit}
