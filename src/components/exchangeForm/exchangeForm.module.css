@@ -70,3 +70,20 @@
   position: absolute;
   bottom: -30px;
 }
+.rate {
+  color: var(--color-accent);
+}
+
+@media (orientation: portrait) {
+  .container {
+    margin: 60px 0;
+    width: 90vw;
+  }
+  .form {
+    width: 100%;
+  }
+  .select {
+    padding: 10px;
+    padding-right: 0;
+  }
+}

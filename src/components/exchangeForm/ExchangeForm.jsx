@@ -12,6 +12,9 @@ function ExchangeForm({ baseRates, onExchangeSubmit, rates }) {
   const onHandleChange = (event) => {
     const { name, value } = event.target;
     setExchangeData({ ...exchangeData, [name]: value });
+    if (exchangeData.amount && exchangeData.from && exchangeData.to) {
+      onExchangeSubmit(exchangeData);
+    }
   };
 
   const handleSubmit = (e) => {
@@ -75,8 +78,9 @@ function ExchangeForm({ baseRates, onExchangeSubmit, rates }) {
       </form>
       {rates && (
         <p>
-          The result for exchange {exchangeData.amount + exchangeData.from} to{" "}
-          {exchangeData.to} is {rates?.result}
+          The result of exchange {exchangeData.amount + exchangeData.from} to{" "}
+          {exchangeData.to} is{" "}
+          <strong className={s.rate}>{rates?.result.toFixed(2)}</strong>
         </p>
       )}
     </div>
